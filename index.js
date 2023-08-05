@@ -25,7 +25,7 @@ function game() {
   for (let i = 1; i <= 5; i++) {
     let playerSelection = prompt(`Round ${i}: Choose Rock, Paper, or Scissors`);
 
-    while (!choice.includes(playerSelection.toLowerCase())) {
+    while (!choice.includes(playerSelection.toLowerCase().trim())) {
       alert("Invalid choice! Please choose Rock, Paper, or Scissors.");
       playerSelection = prompt(`Round ${i}: Choose Rock, Paper, or Scissors`);
     }
